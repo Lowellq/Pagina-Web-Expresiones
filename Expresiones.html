@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html >
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Expresiones</title>
+	<link rel="stylesheet" href="CSS/Expresiones.css">
+	<link rel="shortcut icon" href="IMG/git.ico" type="imagen icono">
+</head>
+<body>
+
+	<header>
+		
+		<nav>
+			<ul>
+					<li id="Menu1"><a href="#" style="color:gray;" onclick="Op1();">Introduccion</a></li>
+					<li id="Menu2"><a href="#" style="color:gray;" onclick="Op2();">Infija</a></li>
+					<li id="Menu3"><a href="#" style="color:gray;" onclick="Op3();">Prefija</a></li>
+					<li id="Menu4"><a href="#" style="color:gray;" onclick="Op4();">Posfija</a></li>
+					
+			</ul>
+		</nav>
+	</header><!-- /header -->
+
+<div id="Cuerpo">
+	
+
+	<section id="Section1">
+		
+		<article id="Introducion">
+			<h4>Una expresión aritmética está formada por operandos y operadores. <br><br>
+
+			Así la expresión:  x *y-(a+b)  <br>
+			consta de los operadores:  * ,  - ,  +  <br>
+			y de los operandos:  x, y, a, b.  <br>
+			Los operandos pueden ser valores constantes, variables o incluso, otra expresión <br><br>
+
+			Así, si los operandos de la expresión anterior toman los valores: <br>
+			x=5,  <br>
+			y=2, <br>
+ 			a=3, <br>
+ 			b=4,  <br>
+			el resultado de la evaluación es: 5*2 – (3+4) = 5*2 – 7 = 10 – 7 = 3  <br><br>
+
+			La forma habitual de escribir expresiones matemáticas es aquella en la que el operador está entre dos operandos  <br><br>
+
+			Forma especial en la que se pueden expresar una expresión matemática en tres formas:<br>
+			Infija, <br>
+			Prefija y <br>
+ 			Posfija.  <br> <br>
+
+ 			Dada la expresión A + B se dice que está en notación infija y su nombre se debe a que el operador (+) está entre los operandos (A y B). <br><br>
+
+ 			Dada la expresión AB+ se dice que está en notación postfija y su nombre se debe a que el operador (+) está después de los operandos (A y B). <br><br>
+
+ 			Dada la expresión + AB se dice que está en notación prefija y su nombre se debe a que el operador (+) está antes de los operandos (A y B). <br><br>
+
+
+
+
+
+
+			</h4>
+		</article>
+
+		<article id="Infija">
+			<h2>Notación Infija</h2>
+
+			<h4>La notación de infijo es la notación común de fórmulas aritméticas y lógicas, en la cual se escriben los operadores entre los operandos en que están actuando (ej. 2 + 2) usando un estilo de infijo.
+			<br>
+			<br>
+			Su notación infija: El orden es operando, operador, operando.<br>
+			<br>
+			<br>	
+
+			Por ejemplo: 		<br>	
+				3*4=12 			<br>			
+				3*4+2=14 		<br>	
+				3/(4+2)=18 		<br><br>	
+
+			Desventajas de la notación infija
+			<br>
+			<br>
+
+			En la notación de infijo, a diferencia de las notaciones de prefijo o posfijo, es necesario rodear entre paréntesis a los grupos de operandos y operadores, para indicar el orden en el cual deben ser realizadas las operaciones. En la ausencia de paréntesis, ciertas reglas de prioridad determinan el orden de las operaciones.
+			<br>
+			<br>		
+
+			Estas reglas de prioridad pueden producir confusiones a la hora de evaluar los operadores y operando, si no se hace uso  de paréntesis, por ejemplo:
+			<br>
+			<br>		
+
+			La expresión: 8/4*2 
+			<br>		
+			Puede interpretarse como: (8/4) *2 
+			<br>	
+			O también: 8/ (4*2)
+			<br><br>		
+			Esto es porque los signos tienen igual prioridad, por eso es importante el uso de paréntesis en este tipo de notación
+
+			
+			</h4>
+		</article>
+
+		<article id="Prefija">
+			<h2>Notación Prefija</h2>
+
+			<h4>Sus características principales son:<br>
+			Los operandos conservan el mismo orden que la notación infija equivalente.<br>
+			No requiere de paréntesis para indicar el orden de precedencia de operadores ya que el es una operación.<br>
+			Se evalúa de izquierda a derecha hasta que encontrémosle primer operador seguido inmediatamente de un par de operandos.<br>
+			Se evalúa la expresión binaria y el resultado se cambia como un nuevo operando. Se repite este hasta que nos quede un solo resultado <br><br>
+
+			Notación prefija: El orden es operador, primer operando, segundo operandos <br><br>
+			
+			Se caracteriza porque los operadores se ubican a la izquierda de los operandos.<br> <br>
+			Ejemplo:<br>
+			Expresión: (5 - 6) * 7 <br>
+			Notación infija: (5 - 6) * 7 <br>
+			Notación prefija: = *-5 6 7 <br>
+	
+		
+
+
+			</h4> 
+		</article>
+
+		<article id="Posfija">
+			<h2>Notación  Posfija</h2>
+
+			<h4>
+			Como su nombre lo indica se refiere a que el operador ocupa la posición después de los operandos sus características principales son:
+			<br>
+			El orden de los operandos se conserva igual que la expresión infija equivalente no utiliza paréntesis ya que no es una operación ambigua. 
+			<br>
+			La operación posfija no es exactamente lo inverso a la operación prefija equivalente.
+			<br>
+			<br>
+			Notación postfija: El orden es primer operando, segundo operando, operador.
+			<br>
+			<br>
+			Ejemplo:
+			<br>
+			Expresión: (5 - 6) * 7 <br>
+			Notación infija: (5 - 6) * 7 <br>
+			Notación prefija: = *-5 6 7 <br>
+			Notación posfija: 5 -6 7* <br><br>
+
+			La notación Postfija es un método algebraico alternativo de introducción de datos que permite reducir el acceso a la memoria del ordenador, sobretodo en calculos masivos y complejos ya que los cálculos se realizan secuencialmente según se van introduciendo los operadores (en vez de tener que esperar a escribir la expresión al completo).
+			<br><br>
+			Basicamente consiste en que en una expresión de ese tipo primero están los operandos y después viene el operador. 
+			<br>
+
+
+
+			</h4>
+		</article>
+		
+
+	</section>
+
+		<aside id="aside">
+			<h3></h3>
+			<img id="Publicidad" src="Img/Publicidad.png"> 
+			<img id="Imgs" src="Img/image-right.png"> 
+		</aside>
+	
+
+</div >
+
+	<footer>
+		<section id="SectionPie">
+					
+				<article id="P1">
+				Copyright &copy; 2019 Granthams Ltd| All Rights Reserved|Credits<br>
+				Home|Print|Copy|Finishing|Design|Information|Contact us<br>
+				Privacy Policy|Terms and Conditions|All Prices XCLUDE VAT
+				</article>
+
+				<article id="P2">
+					<br>
+					Autor:<br>
+					Jesus Lowell Quiñonez Rojo
+				</article>
+					
+				<article id="P3">
+					Sigue en las siguentes redes sociales : <br>
+			<a href="https://es-la.facebook.com/" target="_blank"> <img id="Img" src="img/icon_facebook.png"> </a>
+			<a href="https://twitter.com/login?lang=es" target="_blank"><img id="Img" src="img/icon_twitter.png"></a>
+				
+				</article>
+
+			
+			</section>
+				
+	</footer>
+	<script type="text/javascript" src="JS/Expresiones.js"></script>
+</body>
+</html>
